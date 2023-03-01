@@ -67,7 +67,7 @@ export default {
   mounted() {
     setInterval(() => {
       document.location.reload();
-    }, 2000 * 60);
+    }, 20000);
     axios.get(constants.serverIp + "candidates/").then((req) => {
       this.candidates = req.data;
     });
